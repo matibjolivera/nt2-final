@@ -2,7 +2,6 @@
   <div>
     <label>Ingrese texto</label>
     <input class="form-control" type="text" id="text" name="text" v-model="text">
-    {{ text }}
     {{ textLength }} caracteres
     <br>
     <p><b>1) Codificado:</b> {{ text | toLowerCase | encoded }}</p>
@@ -30,23 +29,6 @@ export default {
   data() {
     return {
       text: ''
-    }
-  },
-  methods: {
-    a() {
-      console.log("a")
-    },
-    b() {
-      console.log("b")
-    },
-    c() {
-      console.log("c")
-    },
-    d() {
-      console.log("d")
-    },
-    e() {
-      console.log("e")
     }
   },
   computed: {
