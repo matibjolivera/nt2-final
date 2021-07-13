@@ -2,6 +2,7 @@
   <div>
     <label>Ingrese texto</label>
     <input class="form-control" type="text" id="text" name="text" v-model="text">
+    {{ text }}
     {{ textLength }} caracteres
     <br>
     <p><b>1) Codificado:</b> {{ text | toLowerCase | encoded }}</p>
@@ -11,6 +12,15 @@
       {{ text | toLowerCase | interspersedUpper }}</p>
     <p><b>5) Minúsculas y mayúsculas intercaladas, empezando por minúscula:</b>
       {{ text | toLowerCase | interspersedLower }}</p>
+    <br>
+    <p><b>Respuestas:</b></p>
+    <ol>
+      <li>b</li>
+      <li>b</li>
+      <li>c</li>
+      <li>b</li>
+      <li>b,c</li>
+    </ol>
   </div>
 </template>
 
@@ -20,6 +30,23 @@ export default {
   data() {
     return {
       text: ''
+    }
+  },
+  methods: {
+    a() {
+      console.log("a")
+    },
+    b() {
+      console.log("b")
+    },
+    c() {
+      console.log("c")
+    },
+    d() {
+      console.log("d")
+    },
+    e() {
+      console.log("e")
     }
   },
   computed: {
